@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+/* Global font */
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Base styles rewritten for Tailwind v4 */
+button {
+  @apply cursor-pointer;
+}
+
+input:not([type="checkbox"]) {
+  @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg;
+}
+
+textarea {
+  @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg resize-none;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input::-webkit-focus-inner {
+  border: 0 !important;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
